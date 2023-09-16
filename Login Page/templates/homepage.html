@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Homepage</title>
+</head>
+<body style="background-color:purple;">
+    <style>
+        .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #199319;
+          color: white;
+          text-decoration: none;
+          border: 1px solid #199319;
+          border-radius: 5px;
+        }
+        
+        .btn:hover {
+          background-color: #008000;
+        }
+        </style>
+    <div class="container">
+        <h1>Welcome to Citizen Greivance Assitance</h1>
+        <p>Please select your login type:</p>
+        <br>
+        <a href="/login" class="btn">Citizen Login</a>
+        <br><br>
+        <a href="/department_login" class="btn">Departmental Login</a>
+        <br><br>
+        <a href="/signup" class="btn">Citizen Signup</a>
+    </div>
+</body>
+</html>
+    

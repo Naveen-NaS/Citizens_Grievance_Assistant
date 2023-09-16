@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citizen Information</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+        .user-profile {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .user-profile p {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #199319;
+        }
+
+        a:hover {
+            color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-profile">
+        <h1>Welcome, {{ user.username }}</h1>
+        <h2>Citizen's Information</h2>
+        <p>Name: {{ user.name }}</p>
+        <p>Date of Birth: {{ user.dob }}</p>
+        <p>Address: {{ user.address }}</p>
+        <p>Mobile Number: {{ user.mobile_number }}</p>
+        <p>Username: {{ user.username }}</p>
+        <a href="/">Go back to homepage</a>
+    </div>
+</body>
+</html>

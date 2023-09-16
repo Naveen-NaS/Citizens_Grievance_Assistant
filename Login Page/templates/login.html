@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login or Signup</title>
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            margin-bottom: 20px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            background-color: #199319;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login or Signup</h1>
+        <form method="POST" action="/login" class="form">
+            <input type="text" name="username" placeholder="Username" required class="input">
+            <input type="password" name="password" placeholder="Password" required class="input">
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <hr>
+        <form method="POST" action="/signup" class="form">
+            <input type="text" name="name" placeholder="Full Name" required class="input">
+            <input type="text" name="dob" placeholder="Date of Birth (YYYY-MM-DD)" required class="input">
+            <input type="text" name="address" placeholder="Address" required class="input">
+            <input type="text" name="mobile_number" placeholder="Mobile Number" required class="input">
+            <input type="text" name="username" placeholder="Username" required class="input">
+            <input type="password" name="password" placeholder="Password" required class="input">
+            <button type="submit" class="btn">Signup</button>
+        </form>
+        <div>{{ get_flashed_messages() }}</div>
+    </div>
+</body>
+</html>
