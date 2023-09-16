@@ -1,7 +1,5 @@
 import nltk
-
-#nltk.download('punkt')
-nltk.data.path.append('venv/nltk_data')
+import numpy as np
 
 from nltk.stem.porter import PorterStemmer
 
@@ -17,10 +15,11 @@ def stem(word):
 
 
 def bag_of_words(tokenized_sentence, all_words):
-    pass
+    tokenized_sentence = [stem(w) for w in tokenized_sentence]
 
+    bag = np.zeros(len(all_words), dtype=np.float32)
+    for index, w in enumerate(all_words):
+        if w in tokenized_sentence:
+            bag[index] = 1.0
 
-a = "How long does Processing take?"
-print(a)
-a = tokenize(a)
-print(a)
+    return bag
