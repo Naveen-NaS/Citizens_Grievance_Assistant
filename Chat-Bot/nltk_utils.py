@@ -14,6 +14,10 @@ def stem(word):
     return stemmer.stem(word.lower())
 
 
+def get_response(sentence):
+    sentence = tokenize(sentence)
+
+
 def bag_of_words(tokenized_sentence, all_words):
     tokenized_sentence = [stem(w) for w in tokenized_sentence]
 
