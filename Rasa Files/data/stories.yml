@@ -1,0 +1,37 @@
+version: "2.0"
+
+stories:
+- story: Greeting and Options
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Complaint
+  steps:
+  - intent: complaint
+  - action: utter_ask_complaint_details
+
+- story: Status
+  steps:
+  - intent: status
+  - action: utter_check_status
+
+- story: Resolve
+  steps:
+  - intent: resolve
+  - action: utter_resolution_time
+
+- story: Thanks
+  steps:
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: Funny
+  steps:
+  - intent: funny
+  - action: utter_joke

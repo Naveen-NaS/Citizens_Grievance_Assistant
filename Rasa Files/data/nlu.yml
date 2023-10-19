@@ -1,0 +1,51 @@
+- intent: greeting
+  examples: |
+    - Hi
+    - Hey
+    - How are you
+    - Is anyone there?
+    - Hello
+    - Good day
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - See you later
+    - Goodbye
+
+- intent: complaint
+  examples: |
+    - I have a complaint
+    - I want to file a complaint.
+    - How can I submit a complaint?
+    - I need to report an issue.
+    - I have a problem that needs attention.
+
+- intent: status
+  examples: |
+    - How can I check the status of my grievance?
+    - Is there a way to track my complaint?
+    - I'd like to know the progress of my grievance.
+
+- intent: resolve
+  examples: |
+    - How long does complaint take
+    - When do I get my issue solved
+    - How long does it usually take to resolve issues
+    - What's the typical turnaround time for complaints
+    - When can I expect my request to be resolved
+    - Is there an estimated time for issue resolution
+    - How much time does it generally take to address complaints
+
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - That's helpful
+    - Thanks a lot!
+
+- intent: funny
+  examples: |
+    - Tell me a joke!
+    - Tell me something funny!
+    - Do you know a joke?

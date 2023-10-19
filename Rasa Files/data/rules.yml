@@ -1,0 +1,24 @@
+version: "2.0"
+
+rules:
+- rule: Respond to Complaint Options
+  steps:
+  - intent: complaint
+  - action: utter_complaint_options
+
+- rule: Provide Follow-up Responses
+  steps:
+  - intent: complaint
+  - action: utter_ask_question_Q1
+
+- rule: Provide Options for Q1
+  condition:
+  - active_loop: Q1
+  steps:
+  - action: utter_options_Q1
+
+- rule: Provide Options for Q2
+  condition:
+  - active_loop: Q2
+  steps:
+  - action: utter_options_Q2

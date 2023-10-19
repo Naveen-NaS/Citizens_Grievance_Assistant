@@ -1,0 +1,91 @@
+version: "3.1"
+intents:
+  - greeting
+  - goodbye
+  - complaint
+  - status
+  - resolve
+  - thanks
+  - funny
+  - affirm
+  - bot_challenge
+  - deny
+  - greet
+  - mood_great
+  - mood_unhappy
+
+responses:
+  utter_complaint_options:
+    - text: "Please provide details of your complaint."
+  utter_ask_question_Q1:
+    - text: "Which government type are you addressing?"
+  utter_options_Q1:
+    - text: "Option 1: Central Government"
+    - text: "Option 2: State Government"
+  utter_ask_question_Q2:
+    - text: "Where is the issue located?"
+  utter_options_Q2:
+    - text: "Option 1: State"
+    - text: "Option 2: Union Territory"
+  utter_greeting:
+    - text: "Hello! What can I help you with?"
+  utter_ask_complaint_details:
+    - text: "Please describe the problem or grievance in detail."
+  utter_check_status:
+    - text: "Sure, I can assist you in checking the status."
+  utter_resolution_time:
+    - text: "Issue resolution may take some time, watch your request status."
+  utter_you_are_welcome:
+    - text: "You're welcome!"
+  utter_joke:
+    - text: "Why did the math book look so sad? Because it had too many problems to solve, and they were all variables!"
+  utter_happy:
+    - text: "I'm happy to assist you!"
+  utter_iamabot:
+    - text: "Yes, I'm a bot."
+  utter_greet:
+    - text: "Hello!"
+  utter_cheer_up:
+    - text: "Cheer up!"
+  utter_did_that_help:
+    - text: "Did that help?"
+
+forms:
+  Q1:
+    Q1:
+      - type: text
+      - mappings:
+        - type: from_text
+  Q2:
+    Q2:
+      - type: text
+      - mappings:
+        - type: from_text
+
+slots:
+  Q1:
+    type: text
+  Q2:
+    type: text
+
+actions:
+  - utter_complaint_options
+  - utter_ask_question_Q1
+  - utter_options_Q1
+  - utter_ask_question_Q2
+  - utter_options_Q2
+  - utter_greeting
+  - utter_ask_complaint_details
+  - utter_check_status
+  - utter_resolution_time
+  - utter_you_are_welcome
+  - utter_joke
+  - utter_happy
+  - utter_iamabot
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
