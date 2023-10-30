@@ -1,0 +1,285 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hello! What can I help you with? ",
+        "Hi! How can I assist you?",
+        "Hi there, What can I do for you?",
+        "Hi there, How can I help?"
+      ],
+      "options": [
+        "Option 1: Register a grievance.",
+        "Option 2: Check the status of an existing grievance."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+
+    {
+      "tag": "complaint",
+      "patterns": [
+        "I have a complaint",
+        "I want to file a complaint.",
+        "How can I submit a complaint?",
+        "I need to report an issue.",
+        "I have a problem that needs attention."
+      ],
+      "responses": [
+        "Please provide details of your complaint.",
+        "Sure, please describe your complaint.",
+        "You can submit a complaint through the official complaint portal.",
+        "Please tell us more about the issue you'd like to report.",
+        "We're here to help. Please explain the issue that needs attention."
+      ],
+      "questions": {
+        "Q1":"Which government type are you addressing ?",
+        "Q2":"Where is the issue located?",
+        "Q3":"Please describe the problem or grievance in detail:"
+      },
+      "options": {
+        "Q1":
+        ["Option 1: Central Government",
+        "Option 2: State Government"],
+        "Q2":
+        ["Option 1: State",
+        "Option 2: Union Territory"]
+      },
+      "options_response":
+        {"Q1":{
+          "Central Government": [
+            "Option 1: Home Affairs ",
+            "Option 2: Housing And Urban Affairs  ",
+            "Option 3: Health & Family Welfare ",
+            "Option 4: Central Board of Direct Taxes(Income Tax) ",
+            "Option 5: Labour And Employment Related ",
+            "Option 6: Posts ",
+            "Option 7: Telecommunications ",
+            "Option 8: Personnel and Training ",
+            "Option 9: Financial Services(Banking Division)",
+            "Option 10: Financial Services(Insurance Division) "],
+          "State Government": []
+        },
+          "Q2": {
+            "State": [
+              "Andhra Pradesh",
+              "Arunachal Pradesh",
+              "Assam",
+              "Bihar",
+              "Chhattisgarh",
+              "Goa",
+              "Gujarat",
+              "Haryana",
+              "Himachal Pradesh",
+              "Jharkhand",
+              "Karnataka",
+              "Kerala",
+              "Madhya Pradesh",
+              "Maharashtra",
+              "Manipur",
+              "Meghalaya",
+              "Mizoram",
+              "Nagaland",
+              "Odisha",
+              "Punjab",
+              "Rajasthan",
+              "Sikkim",
+              "Tamil Nadu",
+              "Telangana",
+              "Tripura",
+              "Uttar Pradesh",
+              "Uttarakhand",
+              "West Bengal"
+            ],
+            "Union Territory": [
+              "Andaman and Nicobar Islands",
+              "Chandigarh",
+              "Dadra and Nagar Haveli and Daman and Diu (merged)",
+              "Lakshadweep",
+              "Delhi (National Capital Territory of Delhi)",
+              "Puducherry"
+            ]
+          }
+        },
+      "follow_up_responses": {
+        "Home Affairs":[
+          "Employee Related/Services Related (Main Secretariat and SSO)",
+          "Award Related/Other National issues",
+          "Border related matters",
+          "Center State constitutional matters",
+          "Legislative Matters","National Disaster related matters",
+          "Citizenship Matters",
+          "Foreign Contribution(FCRA) related matters",
+          "Internal security related matters(Including State police, excluding J&K and NE)",
+          "others"
+        ],
+        "Financial Services (Banking Division)": [
+          "Bank Locker Related",
+          "Deficiency in Customer Service Related",
+          "Education Loan /Housing Loan Related",
+          "Service Charge Related",
+          "Fraud",
+          "Mobile Banking",
+          "Credit/Debit/ATM Cards Related",
+          "Misbehaviour /Harassment/Corruption by Bank Staff Related",
+          "Others"
+        ],
+        "Health & Family Welfare": [
+          "Hospitals",
+          "Medicines",
+          "CGHS Health Centres",
+          "Medical Education",
+          "Financial Assistance for Medical Treatment",
+          "Health Schemes",
+          "Public Health",
+          "Food Regulation",
+          "Online Health Services",
+          "MoHFW Employee Related",
+          "Other"
+        ],
+        "Central Board of Direct Taxes (Income Tax)": [
+          "Pension Related",
+          "Employee Related/ Services related",
+          "Administration related",
+          "Corruption / Malpractices related(VCs, employees)",
+          "Direct Taxes",
+          "PAN Issues",
+          "Technical Issues with website",
+          "Other/Misc/ Suggestions"
+        ],
+        "Labour and Employment Related": [
+          "Cash Benefit/Medical Benefits",
+          "Medical Reimbursement",
+          "Recruitment",
+          "Service Matters",
+          "Termination Related",
+          "Pension Related",
+          "Non-Payment of Wages Related",
+          "Maternity Benefit Related",
+          "Others"
+        ],
+        "Posts": [
+          "Delay/Non-Delivery/Abstraction of Postal Articles",
+          "Pension Related",
+          "Financial Scheme Related",
+          "Pension Related",
+          "Insurance Related",
+          "Aadhar and Post Office Passport Seva Kendra(POPSK) Related",
+          "ePost Office Related",
+          "Others"
+        ],
+        "Telecommunications": [
+          "Mobile Related",
+          "Broadband Related",
+          "Landline Related",
+          "Employee Related/Services Related",
+          "Malpractices/Corruption/Complaint related to financial irregularities",
+          "Tower Related",
+          "Pension Related",
+          "Suggestions",
+          "Others"
+        ],
+        "Personnel and Training": [
+          "Allegation of corruption / misconduct",
+          "All India Services",
+          "Appointment Related",
+          "DoP&T Employees Related",
+          "Institutes under DoP&T",
+          "Policy Related",
+          "Reservation issues in posts and services of Central Government",
+          "Training Matters",
+          "Union Public Service Commission(UPSC)",
+          "Vigilance / Disciplinary Matters",
+          "Others"
+        ],
+        "Housing and Urban Affairs": [
+          "DDA(Delhi Development Authority)",
+          "Directorate of Estates",
+          "Principal Accounts Office",
+          "CPWD",
+          "NCPRB(National Capital Region Planning Board)",
+          "DMRC(Delhi Metro Rail Corporation)",
+          "NCRTC(National Capital Region Transport Corporation Ltd)",
+          "Directorate Of Estates",
+          "Others"
+        ],
+        "Financial Services (Insurance Division)": [
+          "Allegation on Corruption/ Malpractice",
+          "Deficiency in Customer Service Related",
+          "Fraud",
+          "Agents and Surveyors Related",
+          "Misrepresentation by Agents",
+          "Non – Settlement / Delays in Settlement/ Less Settlement of Claims",
+          "Pradhan Mantri Vaya Vandana Yojana",
+          "Pradhan Mantri Suraksha Bima Yojana",
+          "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+          "Service Matters Related",
+          "Pension / Retirement Benefits Related",
+          "Miscellaneous / Others"
+        ]
+      }
+    },
+    {
+      "tag": "status",
+      "patterns": [
+        "How can I check the status of my grievance?",
+        "Is there a way to track my complaint?",
+        "I'd like to know the progress of my grievance."
+      ],
+      "responses": [
+        "Sure, I can assist you in checking the status."
+      ]
+    },
+    {
+      "tag": "resolve",
+      "patterns": [
+        "How long does complaint take",
+        "When do I get my issue solved",
+        "How long does it usually take to resolve issues",
+        "What's the typical turnaround time for complaints",
+        "When can I expect my request to be resolved",
+        "Is there an estimated time for issue resolution",
+        "How much time does it generally take to address complaints"
+      ],
+      "responses": [
+        "Resolution times vary, please check your request status.",
+        "Issue resolution may take some time, watch your request status.",
+        "It depends on the issue, monitor your request status for updates.",
+        "We're working on it; keep an eye on your request status.",
+        "Your issue is in progress; check your request status for details."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the math book look so sad? Because it had too many problems to solve, and they were all variables!",
+        "I told my alarm clock about my problems, and it replied, \"I feel you, I wake up to them every morning!\""
+      ]
+    }
+  ]
+}
